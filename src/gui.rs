@@ -119,7 +119,7 @@ impl ChatApp {
             let result = rt.block_on(async move {
                 let client = reqwest::Client::new();
                 let request_body = OpenRouterChatRequest {
-                    model: "deepseek/deepseek-chat:free".to_string(),
+                    model: "cognitivecomputations/dolphin3.0-mistral-24b:free".to_string(),
                     messages: conversation,
                 };
 
@@ -258,7 +258,7 @@ impl App for ChatApp {
 fn main() {
     let native_options = eframe::NativeOptions::default();
     eframe::run_native(
-        "DeepSeek Rust GUI -",
+        "ChatGPT GUI - Only Model Response",
         native_options,
         Box::new(|cc| Box::new(ChatApp::new(cc))),
     );
