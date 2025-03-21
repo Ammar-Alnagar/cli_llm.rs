@@ -78,6 +78,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
+
 - [OpenRouter](https://openrouter.ai) for their API.
 - The Rust community and open source contributors for the libraries used in this project.
 ```
