@@ -139,7 +139,7 @@ impl ChatApp {
             headers,
             is_typing: false,
             typing_start: None,
-            current_model: "deepseek/deepseek-chat:free".to_string(),
+            current_model: "deepseek/deepseek-chat-v3-0324:free".to_string(),
             dark_mode: false,
         }
     }
@@ -342,7 +342,7 @@ impl App for ChatApp {
                     egui::ComboBox::from_id_source("model_selector")
                         .selected_text(&self.current_model)
                         .show_ui(ui, |ui| {
-                            ui.selectable_value(&mut self.current_model, "deepseek/deepseek-chat:free".to_string(), "DeepSeek Chat");
+                            ui.selectable_value(&mut self.current_model, "deepseek/deepseek-chat-v3-0324:free".to_string(), "DeepSeek Chat");
                             ui.selectable_value(&mut self.current_model, "anthropic/claude-3-5-sonnet".to_string(), "Claude 3.5 Sonnet");
                             ui.selectable_value(&mut self.current_model, "google/gemini-pro".to_string(), "Gemini Pro");
                         });
