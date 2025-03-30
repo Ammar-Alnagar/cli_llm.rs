@@ -2,10 +2,8 @@ use std::env;
 use std::sync::mpsc::{channel, Receiver, Sender};
 use std::thread;
 use std::time::{Duration, Instant};
-
 use eframe::{egui, App};
 use egui::{Align, Color32, FontId, Layout, RichText, Rounding, Stroke, TextStyle, Vec2};
-// Add this import for Margin
 use egui::style::Margin;
 use reqwest::header::{HeaderMap, HeaderValue, AUTHORIZATION, CONTENT_TYPE};
 use serde::{Deserialize, Serialize};
