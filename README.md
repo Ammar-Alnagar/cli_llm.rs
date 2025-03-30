@@ -1,7 +1,10 @@
 
+
 # CLI LLM Chat
 
 A simple command-line interface (CLI) chat application for interacting with a large language model (LLM) using the OpenRouter API. This project is written in Rust and leverages asynchronous HTTP requests to send chat messages and receive responses from the LLM.
+
+
 
 
 ## Features
