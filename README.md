@@ -16,6 +16,7 @@ A simple command-line interface (CLI) chat application for interacting with a la
 
 ## Requirements
 
+
 - [Rust](https://www.rust-lang.org/tools/install) (stable)
 - An API key from [OpenRouter](https://openrouter.ai)
 - (Optional) Git for source control
